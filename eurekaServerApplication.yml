@@ -4,6 +4,8 @@ spring:
   profiles:
     active: dev #激活开发环境
 ---
+spring:
+  profiles: dev
 server:
   port: 6002 # 服务端口
 eureka:
@@ -19,6 +21,8 @@ eureka:
 ---
 server:
   port: 6002 # 服务端口
+spring:
+  profiles: prod
 eureka:
   instance:
     hostname: eureka6002.com # eureka服务端的实例名称
