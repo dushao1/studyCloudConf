@@ -1,4 +1,4 @@
-﻿spring:
+spring:
   profiles:
     active: dev #激活开发环境
 ---
@@ -13,7 +13,7 @@ mybatis:
 spring:
   profiles: dev
   application:
-    name: provider12345 #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个
+    name: provider #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver # mysql驱动包
